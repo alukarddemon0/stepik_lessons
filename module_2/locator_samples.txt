@@ -1,0 +1,5 @@
+input#name
+//input[@name="user_lastname"]
+input.form-control.third
+//input[@data-type="Phones"]
+//input[@class="form-control second"]
