@@ -9,13 +9,14 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    input1 = browser.find_element_by_class_name("first")
+    input1 = browser.find_element_by_xpath("//input[@placeholder='Input your first name']")
     input1.send_keys("Alex")
-    input2 = browser.find_element_by_class_name("second")
+    input2 = browser.find_element_by_xpath("//input[@placeholder='Input your last name']")
     input2.send_keys("Gold")
-    input3 = browser.find_element_by_class_name("third")
+    input3 = browser.find_element_by_xpath("//input[@placeholder='Input your email']")
     input3.send_keys("Test@mail.ru")
 
+    time.sleep(5)
     # Отправляем заполненную форму
     button = browser.find_element_by_css_selector("button.btn")
     button.click()
@@ -34,6 +35,6 @@ try:
 
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
-    time.sleep(10)
+    time.sleep(1)
     # закрываем браузер после всех манипуляций
     browser.quit()
