@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 
 # принимает язык для браузера и сам тип браузера
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default='ru',
+    parser.addoption('--language', action='store', default='en-GB',
                      help="Choose language: ru, en-GB, es, fr")
     parser.addoption('--browser_name', action='store', default='firefox',
                      help="Choose browser: chrome or firefox")
@@ -15,7 +15,7 @@ def pytest_addoption(parser):
 @pytest.fixture(scope='function')
 def language(request):
     language_page = request.config.getoption("language")
-    if language_page not in ('ru', 'en-GB', 'es', 'fr'):
+    if language_page not in ('ru', 'en-gb', 'es', 'fr'):
         raise pytest.UsageError('language not known')
     yield language_page
 
