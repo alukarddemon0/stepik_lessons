@@ -15,7 +15,7 @@ def pytest_addoption(parser):
 @pytest.fixture(scope='function')
 def language(request):
     language_page = request.config.getoption("language")
-    if language_page not in ('ru', 'en-gb', 'es', 'fr'):
+    if language_page not in ('ru', 'en-GB', 'es', 'fr'):
         raise pytest.UsageError('language not known')
     yield language_page
 
