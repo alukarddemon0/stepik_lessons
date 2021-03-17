@@ -17,3 +17,5 @@ class TestProductPage:
         page_product.check_name_product()
         page_product.check_price_product()
         page_product.check_add_to_basket_offer()
+
+    # def test_guest_cant_see_product_in_basket_opened_from_product_page:

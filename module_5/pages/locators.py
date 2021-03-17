@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-
+    basket_button = (By.XPATH, ("//a[@class= 'btn btn-default']"))
+    have_product = (By.XPATH, ("//div[@class= 'basket-items']"))
 
 class LoginPageLocators():
     login_email = (By.CSS_SELECTOR, '#id_login-username')
