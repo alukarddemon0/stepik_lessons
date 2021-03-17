@@ -41,6 +41,3 @@ def browser(request, language):
     yield browser
     print("\nquit browser..")
     browser.quit()
-
-@pytest.mark.parametrize('promo_offer',
-["offer0","offer1","offer2","offer3","offer4","offer5","offer6","offer7","offer8","offer9"])
