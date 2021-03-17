@@ -2,8 +2,8 @@ from .pages.product_page import ProductPage
 
 
 class TestProductPage:
-    def test_add_to_basket(self, browser):
-        link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019'
+    def test_add_to_basket(self, browser, promo_offer):
+        link = f'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?{promo_offer}'
         page_product = ProductPage(browser, link)
         page_product.open()
         page_product.add_to_basket()
