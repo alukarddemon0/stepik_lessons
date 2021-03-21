@@ -1,0 +1,139 @@
+{
+  "uid" : "7f323bf61e53593",
+  "name" : "test_message_disappeared_after_adding_product_to_basket",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_message_disappeared_after_adding_product_to_basket",
+  "historyId" : "b1c3189d6400963e937a7a94e38cea78",
+  "time" : {
+    "start" : 1616088432903,
+    "stop" : 1616088437500,
+    "duration" : 4597
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nAssertionError: Сообщение не пропало",
+  "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x000001B904CCABE0>, browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ef60d08343e1e2960b105f1880522979\")>\n\n    @pytest.mark.xfail\n    def test_message_disappeared_after_adding_product_to_basket(self, browser):\n        link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/'\n        page_product = ProductPage(browser, link)\n        page_product.open()\n        page_product.add_to_basket()\n>       page_product.should_be_gone_success_message()\n\nmodule_5\\test_product_page.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x000001B904D886D0>\n\n    def should_be_gone_success_message(self):\n>       assert self.is_not_element_present(*ProductLocators.message_product_success_add), \\\n            \"Сообщение не пропало\"\nE       AssertionError: Сообщение не пропало\n\nmodule_5\\pages\\product_page.py:49: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1616088431913,
+      "stop" : 1616088432903,
+      "duration" : 990
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "language",
+    "time" : {
+      "start" : 1616088431913,
+      "stop" : 1616088431913,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nAssertionError: Сообщение не пропало",
+    "statusTrace" : "self = <module_5.test_product_page.TestProductPage object at 0x000001B904CCABE0>, browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ef60d08343e1e2960b105f1880522979\")>\n\n    @pytest.mark.xfail\n    def test_message_disappeared_after_adding_product_to_basket(self, browser):\n        link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/'\n        page_product = ProductPage(browser, link)\n        page_product.open()\n        page_product.add_to_basket()\n>       page_product.should_be_gone_success_message()\n\nmodule_5\\test_product_page.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <module_5.pages.product_page.ProductPage object at 0x000001B904D886D0>\n\n    def should_be_gone_success_message(self):\n>       assert self.is_not_element_present(*ProductLocators.message_product_success_add), \\\n            \"Сообщение не пропало\"\nE       AssertionError: Сообщение не пропало\n\nmodule_5\\pages\\product_page.py:49: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "893de63539362784",
+      "name" : "stdout",
+      "source" : "893de63539362784.txt",
+      "type" : "text/plain",
+      "size" : 75
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1616088437506,
+      "stop" : 1616088439614,
+      "duration" : 2108
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "language::0",
+    "time" : {
+      "start" : 1616088439615,
+      "stop" : 1616088439615,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "GOLD"
+  }, {
+    "name" : "thread",
+    "value" : "7868-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "7f323bf61e53593.json",
+  "parameterValues" : [ ]
+}
