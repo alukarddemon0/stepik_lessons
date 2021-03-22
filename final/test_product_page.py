@@ -1,9 +1,7 @@
 from .pages.product_page import AddLogicProduct
-import pytest
 
 
 class TestProductAdd:
-    @pytest.mark.xfail
     def test_add_button(self, language, browser):
         # Data
         link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/hackers-painters_185/'
