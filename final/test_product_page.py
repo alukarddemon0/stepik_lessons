@@ -4,7 +4,7 @@ from .pages.product_page import AddLogicProduct
 class TestProductAdd:
     def test_add_button(self, language, browser):
         # Data
-        link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/hackers-painters_185/'
+        link = 'http://selenium1py.pythonanywhere.com/catalogue/hackers-painters_185/'
 
         # Arrange
         page = AddLogicProduct(browser, link)
@@ -16,7 +16,7 @@ class TestProductAdd:
 
     def test_no_add_wish_list(self, browser):
         # Data
-        link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/hackers-painters_185/'
+        link = 'http://selenium1py.pythonanywhere.com/catalogue/hackers-painters_185/'
 
         # Arrange
         page = AddLogicProduct(browser, link)
@@ -27,7 +27,7 @@ class TestProductAdd:
 
     def test_screen_product(self, browser):
         # Data
-        link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/visual-guide-to-lock-picking_206/'
+        link = 'http://selenium1py.pythonanywhere.com/catalogue/visual-guide-to-lock-picking_206/'
 
         # Arrange
         page = AddLogicProduct(browser, link)
